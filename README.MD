@@ -27,8 +27,6 @@ Java 11.0.18
 Tải SchemaCrawler 16.26.3:
 
 ``` powershell
-cd D:\VietCas\neocarta-mysql
-
 Invoke-WebRequest `
   -Uri "https://github.com/schemacrawler/SchemaCrawler/releases/download/v16.26.3/schemacrawler-16.26.3-bin.zip" `
   -OutFile ".\schemacrawler-16.26.3-bin.zip"
@@ -37,7 +35,7 @@ Invoke-WebRequest `
 Giải nén và đặt tại:
 
 ``` text
-D:\VietCas\neocarta-mysql\schemacrawler-16.26.3-bin\
+neocarta-mysql\schemacrawler-16.26.3-bin\
 ```
 
 Cấu trúc chính:
@@ -58,7 +56,7 @@ có FreeMarker phù hợp, thêm `freemarker-2.3.34.jar` vào thư mục `lib`.
 Tải MySQL Connector/J và đặt file JAR tại:
 
 ``` text
-D:\VietCas\neocarta-mysql\drivers\mysql-connector-j-<version>.jar
+neocarta-mysql\drivers\mysql-connector-j-<version>.jar
 ```
 
 MySQL JDBC driver class:
@@ -72,7 +70,7 @@ com.mysql.cj.jdbc.Driver
 Tạo file:
 
 ``` text
-D:\VietCas\neocarta-mysql\.env
+neocarta-mysql\.env
 ```
 
 Nội dung:
@@ -112,7 +110,6 @@ docker compose up -d
 ## 7. Chạy NeoCarta
 
 ``` powershell
-cd D:\VietCas\neocarta-mysql
 .\.venv\Scripts\Activate.ps1
 ```
 
@@ -151,7 +148,7 @@ UnicodeDecodeError: 'charmap' codec can't decode byte ...
 mở:
 
 ``` text
-D:\VietCas\neocarta-mysql\.venv\Lib\site-packages\
+neocarta-mysql\.venv\Lib\site-packages\
 neocarta\connectors\jdbc\schema\extract.py
 ```
 
