@@ -1,0 +1,9 @@
+neocarta[cli,mcp]==0.8.0
+fastmcp==2.14.7
+
+langchain==1.4.0
+langchain-litellm==0.7.1
+langchain-mcp-adapters==0.3.2
+
+SQLAlchemy==2.0.52
+PyMySQL==1.2.0
