@@ -5,9 +5,7 @@ metadata từ MySQL và ghi vào Neo4j.
 
 ## 1. Tạo môi trường Python và cài NeoCarta
 
-``` powershell
-cd D:\VietCas\neocarta-mysql
-
+``` powershel
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 
